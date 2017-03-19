@@ -10,13 +10,9 @@
 
 <body>
     <header>
-        <figure>
-            <img src="FamilyPlanner/images/wartree.png" alt="Wartree Logo" />
-            <figcaption>Wartree</figcaption>
-        </figure>
         <div id="header-title">
             Family Planner
-            <h2><span id="date">DATE</span>&nbsp;/&nbsp;<span id="time">TIME</span></h2>
+            <h3><span id="date">DATE</span>&nbsp;/&nbsp;<span id="time">TIME</span></h2>
             <script>
                 getDate()
             </script>
@@ -25,40 +21,41 @@
             </script>
         </div>
     </header>
-
     <main>
-        <hr>
         <div>
             <div id="left-col">
+                <div id="calendar">
+                    <iframe src="https://calendar.google.com/calendar/b/1/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;height=700&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=petitesucrier%40gmail.com&amp;color=%231B887A&amp;ctz=America%2FChicago" style="border-width:0" width="950" height="700" frameborder="0" scrolling="no"></iframe>
+                </div>
                 <div id="weather">
                     <table id="weather-table">
                         <tr>
                             <td id="weather-title">Local Weather</td>
                         </tr>
                         <tr>
-                            <td id="location">Lafayette, Purdue University Airport, IN (40.41 N / -86.95 W)</td>
+                            <td id="location">St. Louis Regional Airport, IL (38.89 N / -90.03 W)</td>
                         </tr>
                         <tr>
-                            <td id="updated">Last Updated on Mar 4 2017, 4:54 pm EST</td>
+                            <td id="updated">Last Updated on Mar 19 2017, 10:56 am CDT</td>
                         </tr>
                     </table>
                     <br>
                     <table id="current">
                         <tr>
                             <td id="label">Temperature :</td>
-                            <td id="temp">44.0 F (6.7 C)</td>
+                            <td id="temp">46.0 F (8.0 C)</td>
                         </tr>
                         <tr>
                             <td id="label">Conditions :</td>
-                            <td id="cond">Fair</td>
+                            <td id="cond">Mostly Cloudy</td>
                         </tr>
                         <tr>
                             <td id="label">Humidity :</td>
-                            <td id="humid">60&#37;</td>
+                            <td id="humid">57&#37;</td>
                         </tr>
                         <tr>
                             <td id="label">Barometer :</td>
-                            <td id="pressure">30.41</td>
+                            <td id="pressure">30.37</td>
                         </tr>
                         <tr>
                             <td id="label">Visibility :</td>
@@ -66,47 +63,29 @@
                         </tr>
                         <tr>
                             <td id="label">Wind :</td>
-                            <td id="wind">East at 18.4 MPH </td>
+                            <td id="wind">from the Southeast at 13.8 gusting to 20.7 MPH </td>
                         </tr>
                     </table>
-                    <br><span id="tonight">Tonight: Patchy clouds, low of 30&deg;</span>
-                    <br><span id="tomorrow">Tomorrow: Mild with clouds and sun, high of 60&deg;</span>
+                    <br><span id="tonight">Tonight: Mostly cloudy, a t-storm late, low of 46&deg;</span>
+                    <br><span id="tomorrow">Tomorrow: Mostly cloudy with a t-storm, high of 70&deg;</span>
                 </div>
 
                 <div id="qotd">
                     <h3>Quote of the Day</h3>
-                    <span id="quote">&quot;Have you ever noticed that anybody driving slower than you is an idiot, and anyone going faster than you is a maniac?&quot; - George Carlin</span>
+                    <span id="quote">&quot;Education is the most powerful weapon which you can use to change the world.&quot; - Nelson Mandela</span>
                     <br>
                     <br>
                 </div>
 
                 <div id="wotd">
                     <h3>Word of the Day</h3>
-                    <span id="word">nugatory</span>
-                    <span id="pronounce">(ˈnü-gə-ˌtȯr-ē, ˈnyü-)</span>
-                    <span id="pos">adjective</span><br><br>
-                    <span id="definitions">1:of little or no consequence :trifling inconsequential<br>2:having no force :inoperative<br></span>
-                </div>
-            </div>
-            <div id="right-col">
-                <div id="calendar">
-                    <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;height=650&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=lekrigbaum%40gmail.com&amp;color=%232952A3&amp;ctz=America%2FNew_York" style="border:solid 1px #777" width="1050" height="700" frameborder="0" scrolling="no"></iframe>
+                    <span id="word">chaffer</span>
+                    <span id="pronounce">(ˈcha-fər)</span>
+                    <span id="pos">noun</span><br><br>
+                    <span id="definitions">1:a haggling about price<br>2:haggle<br>3:to exchange small talk :chatter<br>4:exchange barter<br></span>
                 </div>
             </div>
         </div>
-        <!--
-        <div id="nyt">
-            <div id="nyt-title"><h3>New York Times Headlines</h3></div>
-            <div id="title1">"At Iowa High School, Election Results Kindle Tensions and Protests"</div>
-            <div id="desc1">Like many other schools around the country since the election, West High has become a microcosm of the United States, roiled by divisions and mistrust.</div>
-            <br>
-            <div id="title2">"Along the Autism Spectrum, a Path Through Campus Life"</div>
-            <div id="desc2">The first generation of students with an autism diagnosis is fanning out to schools across the country. They face a complex array of academic and social challenges.</div>
-            <br>
-            <div id="title3">"Bring a Yoga Mat and an Open Mind. Goats Are Provided."</div>
-            <div id="desc3">In a pastoral setting in Oregon, a yoga class is joined by four-legged companions.</div>
-        </div>
--->
         <script>
             refreshFromHTML()
         </script>
